@@ -1,0 +1,18 @@
+.caja{
+	position: absolute;
+	left: 40%;
+	top: 10%;
+}
+
+.caja1{
+	position: absolute;
+	left: 40%;
+	top: 10%;
+	background-color: cyan;
+}
+.caja2{
+	position: absolute;
+	left: 40%;
+	top: 200%;
+	background-color: cyan;
+}

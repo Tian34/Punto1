@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Punto 1 </title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <form>
+
+    <div class="caja">
+
+    	<div class="caja1">
+        	<label class="titulos">Numeros :</label><br>
+
+        		<div class="cnumeros">
+        	<input type="text" id="Nu1" placeholder="Numero" class="suma1">
+        	<br>
+        	
+        	<input type="button" value="Guardar" onclick="a();" class="suma">
+        		</div>
+
+        </div>
+
+        	<br>
+        	<br>
+
+        <div class="caja2">
+
+        	<label class="titulos2">Busqueda :</label><br>
+
+        		<div class="cbusq">
+        	<input type="text" id="Bus" placeholder="Numero Mayor" class="busq">
+        	<br>
+        	<input type="button" value="Buscar" onclick="b();" class="btbusq">
+        	<br>
+        	<br>
+        	
+        		</div>
+
+        </div>
+
+        
+
+	</div>
+
+    </form>
+
+
+
+    <script type="text/javascript">
+    var c = [];
+    var Con = 0;
+    var mayo = 0;
+    function a() {
+
+        if (c.length<5) {
+        var n1 = document.getElementById("Nu1");
+        sum = Number(n1.value)
+
+        c.push(sum);
+        console.log(c);
+        
+        
+
+if (c.length==0) {
+    mayo=sum;
+    console.log(mayo);
+}
+else if (sum>mayo) {
+    mayo=sum;
+    console.log(mayo);
+}
+
+    }
+    else
+    {
+        alert("Espacio lleno");
+    }
+    }
+        
+
+    function b() {
+        var a1 = document.getElementById("Bus");
+        var re = document.getElementById("R2");
+        a1.value = mayo;
+    }
+
+</script>
+</body>
+</html>
